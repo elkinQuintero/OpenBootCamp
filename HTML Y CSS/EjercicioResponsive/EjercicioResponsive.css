@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    font-size: 2rem;
+}
+span{
+    font-size: 5vw;
+}
+
+.lateraliz {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    border: solid 1px rgb(102, 100, 100);
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 10px;
+}
+.main {
+    padding: 10px;
+    background-color: aqua;
+    border: solid 1px rgb(102, 100, 100);
+    gap: 10px;
+    flex-grow: 1;
+}
+
+@media (max-width: 640px){
+    body{
+        flex-direction: column-reverse;
+    }
+
+    .lateraliz{
+        flex-direction: row;
+        align-items: space-evenly;
+    }
+}
